@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class Exercice1Component implements OnInit {
   public compteur: number = 0; 
 
+  public miseAJourCompteur(event) : void {
+    this.compteur = event.value;
+  }
   constructor() { }
 
   ngOnInit() {
